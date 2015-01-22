@@ -105,17 +105,9 @@ module.exports = function (grunt) {
 
 		htmlmin: {
 			dist: {
-				files: [{
-					expand: true,
-					cwd: '<%= yeoman.app %>',
-					src: '*.html',
-					dest: '<%= yeoman.dist %>'
-				},
+				files: [
 				{
-				  '<%= yeoman.app %>/index.html': '<%= yeoman.dist %>/skin.html'
-				},   
-				{
-				  '<%= yeoman.app %>/index.xml': '<%= yeoman.dist %>/index.xml'
+				 '<%= yeoman.dist %>/skin.html': '<%= yeoman.app %>/index.html'
 				}]
 			}
 		},
@@ -161,11 +153,10 @@ module.exports = function (grunt) {
                         cwd: '<%= yeoman.app %>/',
                         dest: '<%= yeoman.dist %>',
                         src: [
-                            '*.{ico,png,txt}',
+                            '*.{ico,png,txt,xml}',
                             '.htaccess'
                         ]
-					},
-					
+					},					 
 					{
 						expand: true,
 						flatten: true,
