@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin>
+	<information>
+		<name>BASIC</name>
+		<version>1.0</version>
+		<description>
+			<![CDATA[ 2008년 버전의 Tistory 기본 스킨으로, 웹표준을 준수한 XHTML 기반입니다. 시맨틱한 웹을 유지하기 위해 디자인 부분을 style.css 파일에 독립시켜 적용하였으며, 자유롭게 디자인을 수정하실 수 있습니다. 컨텐츠의 가로 사이즈 630px에 최적화되어 있습니다.]]>
+		</description>
+		<license>
+			<![CDATA[자유롭게 수정이 가능하며, 저작권 표시하에 재배포 가능합니다.]]>
+		</license>
+		<tags>
+			<tag>TISTORY2008</tag> <tag>기본</tag> <tag>심플</tag> <tag>베이직</tag>
+		</tags>
+	</information>
+	<author>
+		<name>TISTORY</name>
+		<homepage>http://www.tistory.com</homepage>
+		<email>tistoryblog@hanmail.net</email>
+	</author>
+	<default>
+		<recentEntries>5</recentEntries>
+		<recentComments>5</recentComments>
+		<recentTrackbacks>5</recentTrackbacks>
+		<itemsOnGuestbook>10</itemsOnGuestbook>
+		<tagsInCloud>30</tagsInCloud>
+		<sortInCloud>3</sortInCloud>
+		<expandComment>0</expandComment>
+		<expandTrackback>0</expandTrackback>
+		<lengthOfRecentNotice>20</lengthOfRecentNotice>
+		<lengthOfRecentEntry>20</lengthOfRecentEntry>
+		<lengthOfRecentComment>20</lengthOfRecentComment>
+		<lengthOfRecentTrackback>20</lengthOfRecentTrackback>
+		<lengthOfLink>20</lengthOfLink>
+		<showListOnCategory>2</showListOnCategory>
+		<showListOnArchive>2</showListOnArchive>
+		<trackbackMessage>
+			<none>트랙백 &lt;span class="cnt"&gt;0&lt;/span&gt;개</none>
+			<single>트랙백 &lt;span class="cnt"&gt;1&lt;/span&gt;개</single>
+		</trackbackMessage>
+		<commentMessage>
+			<none>댓글 &lt;span class="cnt"&gt;0&lt;/span&gt;개가 달렸습니다.</none>
+			<single>댓글 &lt;span class="cnt"&gt;1&lt;/span&gt;개가 달렸습니다.</single>
+		</commentMessage>
+		<tree>
+			<color>666666</color>
+			<bgColor>f8f8f8</bgColor>
+			<activeColor>666666</activeColor>
+			<activeBgColor>f8f8f8</activeBgColor>
+			<labelLength>27</labelLength>
+			<showValue>1</showValue>
+		</tree>
+		<contentWidth>630</contentWidth>
+		<layout>2</layout>
+		<toolbar>white</toolbar>
+		<menuList>
+			<menu>
+				<menuId>1</menuId>
+				<menuName>블로그홈</menuName>
+			</menu>
+			<menu>
+				<menuId>4</menuId>
+				<menuName>지역로그</menuName>
+			</menu>
+			<menu>
+				<menuId>2</menuId>
+				<menuName>태그로그</menuName>
+			</menu>
+			<menu>
+				<menuId>3</menuId>
+				<menuName>미디어로그</menuName>
+			</menu>
+			<menu>
+				<menuId>6</menuId>
+				<menuName>방명록</menuName>
+			</menu>
+		</menuList>
+	</default>
+</skin>

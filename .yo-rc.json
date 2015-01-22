@@ -1,0 +1,10 @@
+{
+  "generator-web": {
+    "appName": "jos39_2015",
+    "includeModernizr": true,
+    "includeUnderscore": false,
+    "includeFontAwesome": true,
+    "includeRespond": true,
+    "includeHtml5shiv": true
+  }
+}
