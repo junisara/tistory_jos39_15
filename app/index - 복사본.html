@@ -15,16 +15,12 @@
     <link rel="shortcut icon" href="[##_blog_link_##]favicon.ico" type="image/x-icon" />
     <link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
 
-    <!-- build:css ./style.css -->
+    <!-- build:css style.css -->
     <link rel="stylesheet" href="styles/bootstrap.css">
     <link rel="stylesheet" href="styles/style.css">
     <!-- endbuild -->
 
-    <!-- build:js({.tmp}) ./images/modernizr.js -->
     <script src="scripts/modernizr.js"></script>
-    <!-- endbuild -->
-
-
     <!--[if lt IE 9]>
         <script src="scripts/html5shiv.js"></script>
         <script src="scripts/respond.min.js"></script>
@@ -105,41 +101,15 @@
             <div class="row">
                 <div class="col-sm-8 blog-main">
                     <!-- 본문 시작 부분 -->
-
                     <s_list>
                         <div id="searchList" class="nonEntry">
                             <h3>'[##_list_conform_##]'에 해당되는 글 [##_list_count_##]건</h3>
                             <ol>
                                 <s_list_rep>
                                     <li>
-                                        <span class="date">2015/01/02</span>
-                                        <a href="[##_list_rep_link_##]">AngularJS의 유용한 directive (지시자) </a>
-                                        <span class="cnt">20</span>
-                                    </li>
-                                    <li>
-                                        <span class="date">2015/01/02</span>
-                                        <a href="[##_list_rep_link_##]">AngularJS의 유용한 directive (지시자) </a>
-                                        <span class="cnt">20</span>
-                                    </li>
-                                    <li>
-                                        <span class="date">2015/01/02</span>
-                                        <a href="[##_list_rep_link_##]">AngularJS의 유용한 directive (지시자) </a>
-                                        <span class="cnt">20</span>
-                                    </li>
-                                    <li>
-                                        <span class="date">2015/01/02</span>
-                                        <a href="[##_list_rep_link_##]">AngularJS의 유용한 directive (지시자) </a>
-                                        <span class="cnt">20</span>
-                                    </li>
-                                    <li>
-                                        <span class="date">2015/01/02</span>
-                                        <a href="[##_list_rep_link_##]">AngularJS의 유용한 directive (지시자) </a>
-                                        <span class="cnt">20</span>
-                                    </li>
-                                    <li>
-                                        <span class="date">2015/01/02</span>
-                                        <a href="[##_list_rep_link_##]">AngularJS의 유용한 directive (지시자) </a>
-                                        <span class="cnt">20</span>
+                                        <span class="date">[##_list_rep_regdate_##]</span>
+                                        <a href="[##_list_rep_link_##]">[##_list_rep_title_##]</a>
+                                        <span class="cnt">[##_list_rep_rp_cnt_##]</span>
                                     </li>
                                 </s_list_rep>
                             </ol>
@@ -215,7 +185,7 @@
                                         <input type="submit" value="남기기" onclick="[##_guest_onclick_submit_##]" class="submit" />
                                     </p>
                                 </div>
-
+                                <!-- guestWrite close -->
                             </s_guest_input_form>
                             <s_guest_container>
                                 <div id="guestList">
@@ -226,7 +196,7 @@
                                                     <span class="name">[##_guest_rep_name_##]</span>
                                                     <span class="date"> [##_guest_rep_date_##]</span>
                                                     <span class="control">
-                                                        <a href="#" onclick="[##_guest_rep_onclick_delete_##]" class="modify">&nbsp;<span>수정/삭제</span>
+														<a href="#" onclick="[##_guest_rep_onclick_delete_##]" class="modify">&nbsp;<span>수정/삭제</span>
                                                     </a>
                                                     <a href="#" onclick="[##_guest_rep_onclick_reply_##]" class="write">&nbsp;<span>댓글쓰기</span></a>
                                                     </span>
@@ -240,7 +210,7 @@
                                                                     <span class="name">[##_guest_rep_name_##]</span>
                                                                     <span class="date"> [##_guest_rep_date_##]</span>
                                                                     <span class="control">
-                                                                        <a href="#" onclick="[##_guest_rep_onclick_delete_##]" class="modify">&nbsp;<span>수정/삭제</span>
+																		<a href="#" onclick="[##_guest_rep_onclick_delete_##]" class="modify">&nbsp;<span>수정/삭제</span>
                                                                     </a>
                                                                     </span>
                                                                     <p>[##_guest_rep_desc_##]</p>
@@ -253,8 +223,10 @@
                                         </s_guest_rep>
                                     </ol>
                                 </div>
+                                <!-- guestList close -->
                             </s_guest_container>
                         </div>
+                        <!-- guestbook close -->
                     </s_guest>
                     <s_notice_rep>
                         <div class="entryNotice">
@@ -283,16 +255,15 @@
                         </div>
                     </s_article_protected>
                     <s_article_rep>
-
-                        <article class="mainDetail">
+                        <article class="mainTitle">
                             <span class="article_date" style="display:none">[##_article_rep_date_##]</span>
                             <div class="article_rep_date">
-                                <div class="ym">2015.02</div>
-                                <div class="d">12</div>
+                                <div class="ym"></div>
+                                <div class="d"></div>
                             </div>
                             <div class="category"><a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a>
                             </div>
-                            <h2 class="articleTitle"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h2>
+                            <h2 class="articleTitle"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h2>	
                             <s_ad_div>
                                 <div class="admin">
                                     <a href="[##_s_ad_m_link_##]">수정</a> :
@@ -304,69 +275,255 @@
                             </s_ad_div>
                         </article>
 
-                        <article class="contents">
-                            <div class="ad">
-                                <!-- 구글 광고 시작  -->
-                                <div class="google_ad1">
-                                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                                    <!-- 모바일-하단_336x280-1 -->
-                                    <ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-8112608132706874" data-ad-slot="1697555684"></ins>
-                                    <script>
-                                    (adsbygoogle = window.adsbygoogle || []).push({});
-                                    </script>
-                                </div>
-                                <!-- 구글 광고 종료  -->
-                                <!-- 구글 광고 시작  -->
-                                <div class="google_ad2">
-                                    <!-- Tistory상단_336x280-2 -->
-                                    <ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-8112608132706874" data-ad-slot="6890771685"></ins>
-                                    <script>
-                                    (adsbygoogle = window.adsbygoogle || []).push({});
-                                    </script>
 
-                                </div>
-                            </div>
-                            <!-- 구글 광고 종료  -->
-
-
-                            [##_article_rep_desc_##]
-
-                            <!-- 구글 광고 시작  -->
-                            <div class="google_ad3">
-
-                                <!-- 모바일-하단_336x280-1 -->
-                                <ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-8112608132706874" data-ad-slot="1697555684"></ins>
-                                <script>
-                                adsbygoogle = window.adsbygoogle || []).push({});
-                                </script>
-                            </div>
-                            <!-- 구글 광고 종료  -->
-
-
-
-                        </article>
                     </s_article_rep>
                     <s_paging>
-                        <!--  <article class="pageNavi" id="pageNavi">
-                           <ul class="pagination">
-                               <li>
-                                   <a [##_prev_page_##] class="[##_no_more_prev_##]" id="prevPage">이전</a>
-                               </li>
-                               <s_paging_rep>
-                                   <li>
-                                       <a [##_paging_rep_link_##] class="num"> [##_paging_rep_link_num_##]</a>
-                                   </li>
-                               </s_paging_rep>
-                               <li>
-                                   <a [##_next_page_##] class="[##_no_more_next_##]" id="nextPage">다음</a>
-                               </li>
-                           </ul>
-                       </article> -->
+                        <article class="pageNavi" id="pageNavi">
+                            <ul class="pagination">
+                                <li>
+                                    <a [##_prev_page_##] class="[##_no_more_prev_##]" id="prevPage">이전</a>
+                                </li>
+                                <s_paging_rep>
+                                    <li>
+                                        <a [##_paging_rep_link_##] class="num"> [##_paging_rep_link_num_##]</a>
+                                    </li>
+                                </s_paging_rep>
+                                <li>
+                                    <a [##_next_page_##] class="[##_no_more_next_##]" id="nextPage">다음</a>
+                                </li>
+                            </ul>
+                        </article>
                     </s_paging>
                     <!-- 본문 끝부분 -->
                 </div>
                 <!-- /.blog-main -->
                 <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+
+
+                    <s_sidebar>
+					<!-- 기본 사이드바 -->
+						<s_sidebar_element>
+						<div class="Sidebar Category">
+							<P class="sidebarTitle"><i class="icon-folder-open-alt"></i> CATEGORY</P>	
+							<!-- 카테고리 모듈 -->	
+								[##_category_##]							
+						</div><!--/.Category -->
+						  <!-- 카테고리 펼쳐놓기 -->	
+						  <script type="text/javascript">try{expandTree();}catch(e){}</script>
+						</s_sidebar_element>
+						<s_sidebar_element>
+							<div class="Sidebar">
+							<!-- 블로그 이미지 모듈 -->
+								<div id="blogImage"><img src="[##_image_##]" alt="블로그 이미지" /></div>
+							</div>
+						</s_sidebar_element>
+						<s_sidebar_element>
+						<div class="Sidebar blogDesc" >
+							<!-- 블로그 설명 모듈 -->
+							<div id="blogDesc">[##_desc_##] <span class="userID">[##_blogger_##]</span></div>
+							</div>					
+						</s_sidebar_element>
+						<s_sidebar_element>
+						<!-- 공지사항 모듈 -->
+						<div class="Sidebar" >						
+							<P class="sidebarTitle"><i class="icon-folder-open-alt"></i> NOTICE</P>
+							<s_rct_notice>
+								<div id="notice">
+									<ul>
+										<s_rct_notice_rep>
+											<li><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a> </li>
+										</s_rct_notice_rep>
+									</ul>
+								</div>
+							</s_rct_notice>
+						</div>
+						</s_sidebar_element>
+						<s_sidebar_element>			
+						<!-- 검색 모듈 -->
+						<div class="Sidebar" >							
+							<s_search>											
+								 <div class="input-group">
+								  <input type="text" class="form-control" id="appendedInputButton" name="[##_search_name_##]" value="[##_search_text_##]" onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }">
+								  <span class="input-group-btn">
+									<button class="btn btn-default" type="button" onclick="[##_search_onclick_submit_##]">Search</button>
+								  </span>
+								</div>
+							</s_search>
+						</div>					
+						</s_sidebar_element>
+						<s_sidebar_element>
+						<div class="Sidebar sidebar-nav" >
+						<!-- 관리자 모듈 -->
+							<div id="adminMenu">
+								<ul>
+									<li class="tab_admin">
+										<a href="[##_owner_url_##]"><img src="./images/btn_admin.gif" alt="관리자" /></a></li>
+									<li class="tab_write">
+										<a href="[##_owner_url_##]/entry/post"><img src="./images/btn_write.gif" alt="글쓰기" /></a></li>
+								</ul>
+							</div>
+						</div>
+						</s_sidebar_element>
+						<s_sidebar_element>
+						<div class="Sidebar sidebar-nav" >
+						<!-- 태그목록 모듈 -->
+							<P class="sidebarTitle"><i class="icon-folder-open-alt"></i> TAG</P>
+							<div id="tagbox">								
+								<ul>
+									<s_random_tags>
+										<li><a href="[##_tag_link_##]" class="[##_tag_class_##]"> [##_tag_name_##]</a></li>
+									</s_random_tags>
+								</ul>
+							</div>
+						</div>
+						</s_sidebar_element>
+						<s_sidebar_element>
+						<div class="Sidebar sidebar-nav" >
+						<!-- 최근 포스트 모듈 -->
+							<P class="sidebarTitle"><i class="icon-folder-open-alt"></i> 최근에 올라온 글</P>
+							<div id="recentPost">								
+								<ul>
+									<s_rctps_rep>
+										<li>
+											<a href="[##_rctps_rep_link_##]"> [##_rctps_rep_title_##].</a>
+											<span class="cnt">[##_rctps_rep_rp_cnt_##]</span>
+										</li>
+									</s_rctps_rep>
+								</ul>
+							</div>
+						</div>
+						</s_sidebar_element>
+						<s_sidebar_element>
+						<div class="Sidebar" >
+						<!-- 최근 댓글 모듈 -->
+							<P class="sidebarTitle"><i class="icon-folder-open-alt"></i> 최근에 달린 댓글</P>
+							<div id="recentComment">								
+								<ul id="recentComments">
+									<s_rctrp_rep>
+										<li>
+											<a href="[##_rctrp_rep_link_##]">[##_rctrp_rep_desc_##].</a>
+											<span class="info">
+												<span class="name">[##_rctrp_rep_name_##]</span>
+												<span class="date">[##_rctrp_rep_time_##]</span>
+											</span>
+										</li>
+									</s_rctrp_rep>
+								</ul>
+							</div>
+						</div>
+						</s_sidebar_element>
+						<s_sidebar_element>
+						<div class="Sidebar" >
+						<!-- 최근 트랙백 모듈 -->
+							<P class="sidebarTitle"><i class="icon-folder-open-alt"></i> 최근에 받은 트랙백</P>
+							<div id="recentTrackback">								
+								<ul>
+									<s_rcttb_rep>
+										<li>
+											<a href="[##_rcttb_rep_link_##]">[##_rcttb_rep_desc_##].</a>
+											<span class="info">
+												<span class="name">[##_rcttb_rep_name_##]</span>
+												<span class="date">[##_rcttb_rep_time_##]</span>
+											</span>
+										</li>
+									</s_rcttb_rep>
+								</ul>
+							</div>
+						</div>
+						</s_sidebar_element>
+						<s_sidebar_element>
+						<div class="Sidebar" >
+						<!-- 최근 보관함 모듈 -->
+							<P class="sidebarTitle"><i class="icon-folder-open-alt"></i> 글 보관함</P>
+							<div id="archive">
+								<ul>
+									<s_archive_rep>
+										<li>
+											<a href="[##_archive_rep_link_##]">[##_archive_rep_date_##] </a>
+											<span class="cnt">([##_archive_rep_count_##])</span>
+										</li>
+									</s_archive_rep>
+								</ul>
+							</div>
+						</div>
+						</s_sidebar_element>
+						<s_sidebar_element>
+						<div class="Sidebar" >
+						<!-- 달력 모듈 -->
+							<P class="sidebarTitle"><i class="icon-folder-open-alt"></i> 달력</P>
+							<div id="calendar">								
+								[##_calendar_##]
+							</div>
+						</div>
+						</s_sidebar_element>
+						<s_sidebar_element>
+						<div class="Sidebar" >
+						<!-- 링크 모듈 -->
+							<P class="sidebarTitle"><i class="icon-folder-open-alt"></i> 링크</P>
+							<div id="link">							
+								<ul>
+									<s_link_rep>
+										<li>
+											<a href="[##_link_url_##]" onclick="window.open(this.href); return false"> [##_link_site_##].</a>
+										</li>
+									</s_link_rep>
+								</ul>
+							</div>
+						</div>
+						</s_sidebar_element>
+						<s_sidebar_element>				
+						<!-- 카운터 모듈 -->
+							<div id="Sidebar">
+								<P class="sidebarTitle"><i class="icon-folder-open-alt"></i> 카운터</P>
+								<ul>
+									<li class="total">Total : [##_count_total_##] </li>
+									<li class="today">Today : [##_count_today_##]</li>
+									<li class="yesterday">Yesterday : [##_count_yesterday_##]</li>
+								</ul>
+							</div>					
+						</s_sidebar_element>				
+					</s_sidebar>
+					<s_sidebar>	
+						<!-- 배너 삽입 위치 -->
+						<s_sidebar_element>
+						<!-- 배너 모듈 - 티스토리 -->
+							<div id="adTistory">
+								<center>
+									<div class="invite_tistory"><a href="http://www.tistory.com/invitation/" target="_blank">티스토리 초대신청</a></div>
+									<a href="http://www.tistory.com"><img src="./images/logo_tistory.gif" width="107" height="27" alt="TISTORY" /></a>						
+									<!-- <div class="tistoryJoin"><a href="http://www.tistory.com/join">티스토리 가입하기!</a></div> -->
+								</center>
+							</div>
+						</s_sidebar_element>
+						<s_sidebar_element>				
+						<!-- RSS 링크 -->
+							<div id="btnRSS">
+								<center>
+									<a href="[##_rss_url_##]" onclick="window.open(this.href); return false">
+									<img src="./images/rss.gif" alt="rss"/> </a>
+								</center>
+							</div>						
+						</s_sidebar_element>
+						<s_sidebar_element>
+						<!-- 페이스북 Like BOX 시작  -->
+							<div id="fb-root"></div>
+							<div class="fb-like-box" data-href="https://www.facebook.com/unclejo39" data-width="263" data-height="The height of the plugin in pixels (optional)." data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true" data-show-border="true"></div>
+						<!-- 페이스북 Like BOX 끝  -->
+						</s_sidebar_element>
+						<s_sidebar_element>						
+							<div class="AD">
+								<div class="sideAutoAD" >				
+									이글이 도움이 되셨다면 추천부탁드립니다.↑	
+								</div>
+							</div><!--/.AD -->	
+						</s_sidebar_element>
+					</s_sidebar>
+					
+					
+					
+
+
+
 
                 </div>
                 <!-- /.blog-sidebar -->
@@ -405,31 +562,31 @@
 
 
 
-    <!-- build:js({bower_components,app}) ./images/vendor.min.js -->
+    <!-- build:js({bower_components,app}) images/vendor.min.js -->
     <script src="jquery/dist/jquery.js"></script>
     <script src="_lib/bootstrap_custom/js/bootstrap.js"></script>
     <!-- endbuild -->
 
-    <!-- build:js({.tmp,app}) ./images/style.js -->
+    <!-- build:js({.tmp,app}) images/style.js -->
     <script src="scripts/style.js"></script>
     <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
             m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-XXXXX-X', 'auto');
-    ga('send', 'pageview');
+        ga('create', 'UA-XXXXX-X', 'auto');
+        ga('send', 'pageview');
     </script>
 </body>
 

@@ -1,55 +1,81 @@
 // out: null, compress: true, strictMath: true
 @charset "utf-8";
- 
-.top {
-    border-bottom: 1px solid @gray-lighter ;   
+/* 본문 공통 */
+
+body {
+    position: relative;
+    background: #ffffff;
+    color: #757575;
+    letter-spacing: -0.04em;
+    a:link {
+        color: @link-base;
+    }
+    a:hover {
+        color: @link-hover
+    }
 }
-
-
-
-
+.top {
+    border-bottom: 1px solid @gray-lighter;
+}
 .mainDetail {
-	position:relative;
-	margin-bottom:20px;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px #eee solid;
     .article_rep_date {
-        width: 45px;
-        height: 45px;
+        width: 55px;
+        height: 55px;
         background: #ff3a00;
         color: #fff;
         float: left;
         margin-right: 10px;
         .ym {
-        	font:verdana,sans-serif;
-        	font-size:0.7em;
-        	letter-spacing:-0.14em;
-        	text-align:center;
-        	position:relative;
-        	top:2px;
+            font-family: verdana, sans-serif;
+            font-size: 0.75em;
+            letter-spacing: -0.08em;
+            text-align: center;
+            position: relative;
+            top: 2px;
         }
         .d {
-        	font:normal 2em verdana,sans-serif;
-        	text-align:center;
-        	position:relative;
-        	top:-3px;
+            position: relative;
+            font: bold 2em verdana, sans-serif;
+            text-align: center;
+            top: -5px;
         }
     }
-    h2 {
-    	a{
-    		color:#333;
-    	}
+    .category {
+        font-size: 0.85em;
+        line-height: 1.5;
+        padding-top: 0;
     }
-    .category{
-    	font:normal 0.75em 'Nanum Gothic',sans-serif;
-    	padding-top:2px;
+    .articleTitle {
+        font-size: 2em;
+        font-weight: bold;
+        margin: 0;
+        margin-top: 5px;
+        a {
+            color: #333;
+        }
     }
-    .articleTitle{
-    	font:bold 2em 'Nanum Gothic',sans-serif;
-    	color:#ff3a00;
-    	margin:0;
-    }
-    .admin{
-    	font:normal 0.75em 'Nanum Gothic',sans-serif;
-    	margin-top:10px;
+    .admin {
+        font: normal 0.85em 'Nanum Gothic', sans-serif;
+        margin-top: 12px;
     }
 }
- 
+.contents {
+    font-size: 1.2em;
+    .ad {
+    	text-align: center;	
+    	padding: 0 20px;
+    	overflow: hidden;
+        .google_ad1 {
+            float: left;
+            margin-right:10px;
+        }
+        .google_ad2 {
+            float: right;
+            margin-left:10px;
+        }
+    }
+}
