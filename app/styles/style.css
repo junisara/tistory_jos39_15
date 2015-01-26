@@ -2,3 +2,45 @@
 .top {
   border-bottom: 1px solid #eeeeee;
 }
+.mainDetail {
+  position: relative;
+  margin-bottom: 20px;
+}
+.mainDetail .article_rep_date {
+  width: 45px;
+  height: 45px;
+  background: #ff3a00;
+  color: #fff;
+  float: left;
+  margin-right: 10px;
+}
+.mainDetail .article_rep_date .ym {
+  font: verdana, sans-serif;
+  font-size: 0.7em;
+  letter-spacing: -0.14em;
+  text-align: center;
+  position: relative;
+  top: 2px;
+}
+.mainDetail .article_rep_date .d {
+  font: normal 2em verdana, sans-serif;
+  text-align: center;
+  position: relative;
+  top: -3px;
+}
+.mainDetail h2 a {
+  color: #333;
+}
+.mainDetail .category {
+  font: normal 0.75em 'Nanum Gothic', sans-serif;
+  padding-top: 2px;
+}
+.mainDetail .articleTitle {
+  font: bold 2em 'Nanum Gothic', sans-serif;
+  color: #ff3a00;
+  margin: 0;
+}
+.mainDetail .admin {
+  font: normal 0.75em 'Nanum Gothic', sans-serif;
+  margin-top: 10px;
+}
