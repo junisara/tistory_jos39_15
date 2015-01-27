@@ -1,8 +1,8 @@
 // Generated on 2015-01-20 using generator-web 0.2.5
 
 'use strict';
-var LIVERELOAD_PORT = 4000,
-	SERVER_PORT = 3000,
+var LIVERELOAD_PORT = 35720,
+	SERVER_PORT = 9000,
 	lrSnippet = require('connect-livereload')({ port: LIVERELOAD_PORT }),
 	mountFolder = function (connect, dir) {
 		return connect.static(require('path').resolve(dir));
@@ -36,17 +36,17 @@ module.exports = function (grunt) {
 				tasks: ['less:dev']
 			},
 			styles: {
-				files: [					
+				files: [
 					'<%= yeoman.app %>/_lib/bootstrap_custom/css/{,*/}*.css'
 				],
 				tasks: ['newer:copy:server', 'autoprefixer']
-			},			
+			},
             livereload: {
                 files: [
 					'Gruntfile.js',
                     '<%= yeoman.app %>/{,*/}*.html',
                     '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
-                    '<%= yeoman.app %>/media/{,*/}*.{gif,jpeg,jpg,png,svg,webp}'
+                    '<%= yeoman.app %>/images/{,*/}*.{gif,jpeg,jpg,png,svg,webp}'
                 ]
             }
         },
@@ -156,7 +156,7 @@ module.exports = function (grunt) {
                             '*.{ico,png,txt,xml}',
                             '.htaccess'
                         ]
-					},					 
+					},
 					{
 						expand: true,
 						flatten: true,
@@ -184,16 +184,16 @@ module.exports = function (grunt) {
 					}
                 ]
             },
-		  
+
 			server: {
 				files: [
 					{
 						expand: true,
 						flatten: true,
 						cwd: '<%= yeoman.app %>/_lib/bootstrap_custom/css',
-						dest: '<%= yeoman.app %>/styles/',
+						dest: '.tmp/styles/',
 						src:  '{,*/}*.css'
-					},					
+					},
 					{
 						expand: true,
 						flatten: true,
@@ -205,15 +205,15 @@ module.exports = function (grunt) {
 			}
         },
 
-		 // less file 
+		 // less file
 		less: {
 		  dev: {
 			  files: {
-				  '<%= yeoman.app %>/styles/style.css': '<%= yeoman.app %>/_less/_less_source.less'
-				}   
+				  '.tmp/styles/style.css': '<%= yeoman.app %>/_less/_less_source.less'
+				}
 		  }
 		},
-	
+
         // Make sure code styles are up to par and there are no obvious mistakes
         jshint: {
             options: {
@@ -252,18 +252,7 @@ module.exports = function (grunt) {
         }
     });
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	grunt.registerTask('build', [
         'clean:dist',
         'modernizr',
@@ -273,7 +262,7 @@ module.exports = function (grunt) {
 		'htmlmin',
 		'cssmin',
 		'imagemin',
-		'jshint',		
+		'jshint',
 		'uglify',
 		'usemin',
         'copy:dist'
