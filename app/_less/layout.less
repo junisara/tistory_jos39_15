@@ -14,16 +14,34 @@ body {
         color: @link-hover
     }
 }
+.top {
+    height: 30px;
+    background: #fdfdfd;
+    border: 1px #f5f5f5 solid;
+}
 .gnb {
     border-bottom: 1px solid @gray-lighter;
-    .depth1>li {
-            display: inline;
-            font-size: 18px;
+    padding: 10px 0;
+    .logo {
+        
+    }
+    .depth1 {
+        margin-top: 15px;
+        > li {
+            margin-right: 3em;
+            vertical-align: top;
+            font-size: 16px;
+            > ul {
+                display: none;
+                font-size: 14px;
+            }
         }
     }
-
-
-
+    .search {
+        float: right;
+        margin-top: 10px;
+    }
+}
 .mainDetail {
     position: relative;
     margin-bottom: 20px;
@@ -73,16 +91,16 @@ body {
 .contents {
     font-size: 1.2em;
     .ad {
-    	text-align: center;
-    	padding: 0 20px;
-    	overflow: hidden;
+        text-align: center;
+        padding: 0 20px;
+        overflow: hidden;
         .google_ad1 {
             float: left;
-            margin-right:10px;
+            margin-right: 10px;
         }
         .google_ad2 {
             float: right;
-            margin-left:10px;
+            margin-left: 10px;
         }
     }
 }

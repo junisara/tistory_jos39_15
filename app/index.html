@@ -37,98 +37,80 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser.
             Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
-<nav class="gnb">
-    <div class="container">
-        <a href="[##_blog_link_##]">
-            <img src="./images/logoMenu.png" alt="로고">
-        </a>
-        <ul class="depth1">
-            <li class="active"><a href="[##_blog_link_##]">Home</a></li>
-            <li><a href="[##_blog_link_##]category/여행이야기">여행이야기</a></li>
-            <li><a href="[##_blog_link_##]category/맛집이야기">맛집이야기</a></li>
-            <li>
-                <a href="[##_blog_link_##]category/IT" >IT이야기</a>
-                <ul >
-                    <li><a href="[##_blog_link_##]category/IT/블로그운영">블로그운영</a></li>
-                    <li><a href="[##_blog_link_##]category/IT/데스크탑">데스크탑</a></li>
-                    <li><a href="[##_blog_link_##]category/IT/무료프로그램">무료프로그램</a></li>
-                    <li><a href="[##_blog_link_##]category/IT/워드프레스">워드프레스</a></li>
-                    <li><a href="[##_blog_link_##]category/IT/이클립스">이클립스</a></li>
-                    <li><a href="[##_blog_link_##]category/IT/Synology">Synology</a></li>
-                    <li><a href="[##_blog_link_##]category/IT/Notepad++">Notepad++</a></li>
-                    <li><a href="[##_blog_link_##]category/IT/엑셀">엑셀</a></li>
-                </ul>
-            </li>
-            <li >
-                <a href="#" >WEB </a>
-                <ul >
-                    <li><a href="[##_blog_link_##]category/WEB/웹접근성">웹접근성</a></li>
-                    <li><a href="[##_blog_link_##]category/WEB/HTML5">HTML5</a></li>
-                    <li><a href="[##_blog_link_##]category/WEB/CSS3">CSS3</a></li>
-                    <li><a href="[##_blog_link_##]category/WEB/javascript/jQuery">javascript/jQuery</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-
-        <nav class="navbar navbar-default top"  style="display: none">
+        <div class="top"></div>
+        <nav class="gnb">
             <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="[##_blog_link_##]">
-                        <img src="./images/logoMenu.png" alt="로고">
-                    </a>
+                <div class="row">
+                    <div class="col-sm-2">
+                         <a href="[##_blog_link_##]" class="logo">
+                            <img src="./images/logoMenu.png" alt="로고">
+                        </a>
+                    </div>
+                    <div class="col-sm-7">                       
+                        <ul class="list-inline depth1">
+                            <li class="active"><a href="[##_blog_link_##]">Home</a>
+                            </li>
+                            <li><a href="[##_blog_link_##]category/여행이야기">여행이야기</a>
+                            </li>
+                            <li><a href="[##_blog_link_##]category/맛집이야기">맛집이야기</a>
+                            </li>
+                            <li>
+                                <a href="[##_blog_link_##]category/IT">IT이야기</a>
+                                <ul class="list-unstyled">
+                                    <li><a href="[##_blog_link_##]category/IT/블로그운영">블로그운영</a>
+                                    </li>
+                                    <li><a href="[##_blog_link_##]category/IT/데스크탑">데스크탑</a>
+                                    </li>
+                                    <li><a href="[##_blog_link_##]category/IT/무료프로그램">무료프로그램</a>
+                                    </li>
+                                    <li><a href="[##_blog_link_##]category/IT/워드프레스">워드프레스</a>
+                                    </li>
+                                    <li><a href="[##_blog_link_##]category/IT/이클립스">이클립스</a>
+                                    </li>
+                                    <li><a href="[##_blog_link_##]category/IT/Synology">Synology</a>
+                                    </li>
+                                    <li><a href="[##_blog_link_##]category/IT/Notepad++">Notepad++</a>
+                                    </li>
+                                    <li><a href="[##_blog_link_##]category/IT/엑셀">엑셀</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">WEB </a>
+                                <ul class="list-unstyled">
+                                    <li><a href="[##_blog_link_##]category/WEB/웹접근성">웹접근성</a>
+                                    </li>
+                                    <li><a href="[##_blog_link_##]category/WEB/HTML5">HTML5</a>
+                                    </li>
+                                    <li><a href="[##_blog_link_##]category/WEB/CSS3">CSS3</a>
+                                    </li>
+                                    <li><a href="[##_blog_link_##]category/WEB/javascript/jQuery">javascript/jQuery</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                    <div class="col-sm-3">
+
+                        <!-- 검색 모듈 -->
+                        <div class="search">
+                            <s_search>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="appendedInputButton" name="[##_search_name_##]" value="[##_search_text_##]" onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }">
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button" onclick="[##_search_onclick_submit_##]">Search</button>
+                                  </span>
+                                </div>
+                            </s_search>
+                        </div>
+
+
+                    </div>
+
                 </div>
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="[##_blog_link_##]">Home</a>
-                    </li>
-                    <li><a href="[##_blog_link_##]category/여행이야기">여행이야기</a>
-                    </li>
-                    <li><a href="[##_blog_link_##]category/맛집이야기">맛집이야기</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="[##_blog_link_##]category/IT" class="dropdown-toggle" data-toggle="dropdown">IT이야기 <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="[##_blog_link_##]category/IT/블로그운영">블로그운영</a>
-                            </li>
-                            <li><a href="[##_blog_link_##]category/IT/데스크탑">데스크탑</a>
-                            </li>
-                            <li><a href="[##_blog_link_##]category/IT/무료프로그램">무료프로그램</a>
-                            </li>
-                            <li><a href="[##_blog_link_##]category/IT/워드프레스">워드프레스</a>
-                            </li>
-                            <li><a href="[##_blog_link_##]category/IT/이클립스">이클립스</a>
-                            </li>
-                            <li><a href="[##_blog_link_##]category/IT/Synology">Synology</a>
-                            </li>
-                            <li><a href="[##_blog_link_##]category/IT/Notepad++">Notepad++</a>
-                            </li>
-                            <li><a href="[##_blog_link_##]category/IT/엑셀">엑셀</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">WEB <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="[##_blog_link_##]category/WEB/웹접근성">웹접근성</a>
-                            </li>
-                            <li><a href="[##_blog_link_##]category/WEB/HTML5">HTML5</a>
-                            </li>
-                            <li><a href="[##_blog_link_##]category/WEB/CSS3">CSS3</a>
-                            </li>
-                            <li><a href="[##_blog_link_##]category/WEB/javascript/jQuery">javascript/jQuery</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <!--/.nav-collapse -->
+
             </div>
         </nav>
 
@@ -398,7 +380,226 @@
                 </div>
                 <!-- /.blog-main -->
                 <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-
+                    <s_sidebar>
+                        <!-- 기본 사이드바 -->
+                        <s_sidebar_element>
+                            <div class="Sidebar Category">
+                                <P class="sidebarTitle"><i class="icon-folder-open-alt"></i> CATEGORY</P>
+                                <!-- 카테고리 모듈 -->
+                                [##_category_##]
+                            </div>
+                            <!--/.Category -->
+                            <!-- 카테고리 펼쳐놓기 -->
+                            <script type="text/javascript">
+                            try {
+                                expandTree();
+                            } catch (e) {}
+                            </script>
+                        </s_sidebar_element>
+                        <s_sidebar_element>
+                            <div class="Sidebar">
+                                <!-- 블로그 이미지 모듈 -->
+                                <div id="blogImage"><img src="[##_image_##]" alt="블로그 이미지" />
+                                </div>
+                            </div>
+                        </s_sidebar_element>
+                        <s_sidebar_element>
+                            <div class="Sidebar blogDesc">
+                                <!-- 블로그 설명 모듈 -->
+                                <div id="blogDesc">[##_desc_##] <span class="userID">[##_blogger_##]</span>
+                                </div>
+                            </div>
+                        </s_sidebar_element>
+                        <s_sidebar_element>
+                            <!-- 공지사항 모듈 -->
+                            <div class="Sidebar">
+                                <P class="sidebarTitle"><i class="icon-folder-open-alt"></i> NOTICE</P>
+                                <s_rct_notice>
+                                    <div id="notice">
+                                        <ul>
+                                            <s_rct_notice_rep>
+                                                <li><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a> </li>
+                                            </s_rct_notice_rep>
+                                        </ul>
+                                    </div>
+                                </s_rct_notice>
+                            </div>
+                        </s_sidebar_element>
+                        <s_sidebar_element>
+                            <div class="Sidebar sidebar-nav">
+                                <!-- 관리자 모듈 -->
+                                <div id="adminMenu">
+                                    <ul>
+                                        <li class="tab_admin">
+                                            <a href="[##_owner_url_##]"><img src="./images/btn_admin.gif" alt="관리자" />
+                                            </a>
+                                        </li>
+                                        <li class="tab_write">
+                                            <a href="[##_owner_url_##]/entry/post"><img src="./images/btn_write.gif" alt="글쓰기" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </s_sidebar_element>
+                        <s_sidebar_element>
+                            <div class="Sidebar sidebar-nav">
+                                <!-- 태그목록 모듈 -->
+                                <P class="sidebarTitle"><i class="icon-folder-open-alt"></i> TAG</P>
+                                <div id="tagbox">
+                                    <ul>
+                                        <s_random_tags>
+                                            <li><a href="[##_tag_link_##]" class="[##_tag_class_##]"> [##_tag_name_##]</a>
+                                            </li>
+                                        </s_random_tags>
+                                    </ul>
+                                </div>
+                            </div>
+                        </s_sidebar_element>
+                        <s_sidebar_element>
+                            <div class="Sidebar sidebar-nav">
+                                <!-- 최근 포스트 모듈 -->
+                                <P class="sidebarTitle"><i class="icon-folder-open-alt"></i> 최근에 올라온 글</P>
+                                <div id="recentPost">
+                                    <ul>
+                                        <s_rctps_rep>
+                                            <li>
+                                                <a href="[##_rctps_rep_link_##]"> [##_rctps_rep_title_##].</a>
+                                                <span class="cnt">[##_rctps_rep_rp_cnt_##]</span>
+                                            </li>
+                                        </s_rctps_rep>
+                                    </ul>
+                                </div>
+                            </div>
+                        </s_sidebar_element>
+                        <s_sidebar_element>
+                            <div class="Sidebar">
+                                <!-- 최근 댓글 모듈 -->
+                                <P class="sidebarTitle"><i class="icon-folder-open-alt"></i> 최근에 달린 댓글</P>
+                                <div id="recentComment">
+                                    <ul id="recentComments">
+                                        <s_rctrp_rep>
+                                            <li>
+                                                <a href="[##_rctrp_rep_link_##]">[##_rctrp_rep_desc_##].</a>
+                                                <span class="info">
+                                                <span class="name">[##_rctrp_rep_name_##]</span>
+                                                <span class="date">[##_rctrp_rep_time_##]</span>
+                                                </span>
+                                            </li>
+                                        </s_rctrp_rep>
+                                    </ul>
+                                </div>
+                            </div>
+                        </s_sidebar_element>
+                        <s_sidebar_element>
+                            <div class="Sidebar">
+                                <!-- 최근 트랙백 모듈 -->
+                                <P class="sidebarTitle"><i class="icon-folder-open-alt"></i> 최근에 받은 트랙백</P>
+                                <div id="recentTrackback">
+                                    <ul>
+                                        <s_rcttb_rep>
+                                            <li>
+                                                <a href="[##_rcttb_rep_link_##]">[##_rcttb_rep_desc_##].</a>
+                                                <span class="info">
+                                                <span class="name">[##_rcttb_rep_name_##]</span>
+                                                <span class="date">[##_rcttb_rep_time_##]</span>
+                                                </span>
+                                            </li>
+                                        </s_rcttb_rep>
+                                    </ul>
+                                </div>
+                            </div>
+                        </s_sidebar_element>
+                        <s_sidebar_element>
+                            <div class="Sidebar">
+                                <!-- 최근 보관함 모듈 -->
+                                <P class="sidebarTitle"><i class="icon-folder-open-alt"></i> 글 보관함</P>
+                                <div id="archive">
+                                    <ul>
+                                        <s_archive_rep>
+                                            <li>
+                                                <a href="[##_archive_rep_link_##]">[##_archive_rep_date_##] </a>
+                                                <span class="cnt">([##_archive_rep_count_##])</span>
+                                            </li>
+                                        </s_archive_rep>
+                                    </ul>
+                                </div>
+                            </div>
+                        </s_sidebar_element>
+                        <s_sidebar_element>
+                            <div class="Sidebar">
+                                <!-- 달력 모듈 -->
+                                <P class="sidebarTitle"><i class="icon-folder-open-alt"></i> 달력</P>
+                                <div id="calendar">
+                                    [##_calendar_##]
+                                </div>
+                            </div>
+                        </s_sidebar_element>
+                        <s_sidebar_element>
+                            <div class="Sidebar">
+                                <!-- 링크 모듈 -->
+                                <P class="sidebarTitle"><i class="icon-folder-open-alt"></i> 링크</P>
+                                <div id="link">
+                                    <ul>
+                                        <s_link_rep>
+                                            <li>
+                                                <a href="[##_link_url_##]" onclick="window.open(this.href); return false"> [##_link_site_##].</a>
+                                            </li>
+                                        </s_link_rep>
+                                    </ul>
+                                </div>
+                            </div>
+                        </s_sidebar_element>
+                        <s_sidebar_element>
+                            <!-- 카운터 모듈 -->
+                            <div id="Sidebar">
+                                <P class="sidebarTitle"><i class="icon-folder-open-alt"></i> 카운터</P>
+                                <ul>
+                                    <li class="total">Total : [##_count_total_##] </li>
+                                    <li class="today">Today : [##_count_today_##]</li>
+                                    <li class="yesterday">Yesterday : [##_count_yesterday_##]</li>
+                                </ul>
+                            </div>
+                        </s_sidebar_element>
+                    </s_sidebar>
+                    <s_sidebar>
+                        <!-- 배너 삽입 위치 -->
+                        <s_sidebar_element>
+                            <!-- 배너 모듈 - 티스토리 -->
+                            <div id="adTistory">
+                                <center>
+                                    <div class="invite_tistory"><a href="http://www.tistory.com/invitation/" target="_blank">티스토리 초대신청</a>
+                                    </div>
+                                    <a href="http://www.tistory.com"><img src="./images/logo_tistory.gif" width="107" height="27" alt="TISTORY" />
+                                    </a>
+                                    <!-- <div class="tistoryJoin"><a href="http://www.tistory.com/join">티스토리 가입하기!</a></div> -->
+                                </center>
+                            </div>
+                        </s_sidebar_element>
+                        <s_sidebar_element>
+                            <!-- RSS 링크 -->
+                            <div id="btnRSS">
+                                <center>
+                                    <a href="[##_rss_url_##]" onclick="window.open(this.href); return false">
+                                        <img src="./images/rss.gif" alt="rss" /> </a>
+                                </center>
+                            </div>
+                        </s_sidebar_element>
+                        <s_sidebar_element>
+                            <!-- 페이스북 Like BOX 시작  -->
+                            <div id="fb-root"></div>
+                            <div class="fb-like-box" data-href="https://www.facebook.com/unclejo39" data-width="263" data-height="The height of the plugin in pixels (optional)." data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true" data-show-border="true"></div>
+                            <!-- 페이스북 Like BOX 끝  -->
+                        </s_sidebar_element>
+                        <s_sidebar_element>
+                            <div class="AD">
+                                <div class="sideAutoAD">
+                                    이글이 도움이 되셨다면 추천부탁드립니다.↑
+                                </div>
+                            </div>
+                            <!--/.AD -->
+                        </s_sidebar_element>
+                    </s_sidebar>
                 </div>
                 <!-- /.blog-sidebar -->
 

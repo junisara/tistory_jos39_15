@@ -257,10 +257,16 @@ module.exports = function (grunt) {
         'clean:dist',
         'modernizr',
 		'useminPrepare',
+
+		'copy:server',
 		'less:dev',
+
 		'concat',
 		'htmlmin',
 		'cssmin',
+
+
+
 		'imagemin',
 		'jshint',
 		'uglify',
