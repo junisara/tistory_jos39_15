@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="[##_blog_link_##]favicon.ico" type="image/x-icon" />
     <link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
 
-    <!-- build:css ./style.css -->
+    <!-- build:css({.tmp}) ./style.css -->
     <link rel="stylesheet" href="styles/bootstrap.css">
     <link rel="stylesheet" href="styles/style.css">
     <!-- endbuild -->
@@ -34,11 +34,46 @@
 <body>
     <s_t3>
         <!--[if lt IE 10]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. 
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser.
             Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
+<nav class="gnb">
+    <div class="container">
+        <a href="[##_blog_link_##]">
+            <img src="./images/logoMenu.png" alt="로고">
+        </a>
+        <ul class="depth1">
+            <li class="active"><a href="[##_blog_link_##]">Home</a></li>
+            <li><a href="[##_blog_link_##]category/여행이야기">여행이야기</a></li>
+            <li><a href="[##_blog_link_##]category/맛집이야기">맛집이야기</a></li>
+            <li>
+                <a href="[##_blog_link_##]category/IT" >IT이야기</a>
+                <ul >
+                    <li><a href="[##_blog_link_##]category/IT/블로그운영">블로그운영</a></li>
+                    <li><a href="[##_blog_link_##]category/IT/데스크탑">데스크탑</a></li>
+                    <li><a href="[##_blog_link_##]category/IT/무료프로그램">무료프로그램</a></li>
+                    <li><a href="[##_blog_link_##]category/IT/워드프레스">워드프레스</a></li>
+                    <li><a href="[##_blog_link_##]category/IT/이클립스">이클립스</a></li>
+                    <li><a href="[##_blog_link_##]category/IT/Synology">Synology</a></li>
+                    <li><a href="[##_blog_link_##]category/IT/Notepad++">Notepad++</a></li>
+                    <li><a href="[##_blog_link_##]category/IT/엑셀">엑셀</a></li>
+                </ul>
+            </li>
+            <li >
+                <a href="#" >WEB </a>
+                <ul >
+                    <li><a href="[##_blog_link_##]category/WEB/웹접근성">웹접근성</a></li>
+                    <li><a href="[##_blog_link_##]category/WEB/HTML5">HTML5</a></li>
+                    <li><a href="[##_blog_link_##]category/WEB/CSS3">CSS3</a></li>
+                    <li><a href="[##_blog_link_##]category/WEB/javascript/jQuery">javascript/jQuery</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-        <nav class="navbar navbar-default top">
+
+        <nav class="navbar navbar-default top"  style="display: none">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -93,10 +128,6 @@
                         </ul>
                     </li>
                 </ul>
-
-
-
-
                 <!--/.nav-collapse -->
             </div>
         </nav>
