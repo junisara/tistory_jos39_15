@@ -42,11 +42,13 @@
             Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
         <div class="top"></div>
+
+        <div id="content"> ssssssss </div>
         <nav class="gnb">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-2">
-                         <a href="[##_blog_link_##]" class="logo">
+                        <a href="[##_blog_link_##]" class="logo">
                             <img src="./images/logoMenu.png" alt="로고">
                         </a>
                     </div>
@@ -644,11 +646,25 @@
     <!-- build:js({bower_components,app}) ./images/vendor.min.js -->
     <script src="jquery/dist/jquery.js"></script>
     <script src="_lib/bootstrap_custom/js/bootstrap.js"></script>
+    <script src="marked/lib/marked.js"></script>
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app}) ./images/style.js -->
     <script src="scripts/style.js"></script>
     <!-- endbuild -->
+
+    <script>
+    jQuery(function() {
+
+        jQuery('markdown').each(function() {
+            jQuery(this).replaceWith(marked(jQuery(this).html()));
+        });
+
+    });
+    </script>
+
+
+
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
