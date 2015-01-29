@@ -131,9 +131,16 @@ module.exports = function (grunt) {
 
         cssmin: {
 			dist: {
-				files: {
-					'<%= yeoman.dist %>/style.css': ['.tmp/concat/style.css']
+
+				files: [{
+					'<%= yeoman.dist %>/style.css': ['.tmp/styles/style.css']
+				},
+				{
+					'<%= yeoman.dist %>/images/bootstrap.min.css': ['.tmp/styles/bootstrap.css']
 				}
+				]
+
+
 			}
         },
 
@@ -257,16 +264,11 @@ module.exports = function (grunt) {
         'clean:dist',
         'modernizr',
 		'useminPrepare',
-
-		'copy:server',
 		'less:dev',
-
+		'copy:server',
 		'concat',
 		'htmlmin',
 		'cssmin',
-
-
-
 		'imagemin',
 		'jshint',
 		'uglify',
