@@ -15,19 +15,23 @@
     <link rel="shortcut icon" href="[##_blog_link_##]favicon.ico" type="image/x-icon" />
     <link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
 
-
     <!-- build:css({.tmp}) ./images/bootstrap.min.css -->
-    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/bootstrap.css">   
+    <!-- endbuild -->
+
+    <!-- build:css({bower_components, .tmp}) ./images/font-awesome.min.css -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
     <!-- endbuild -->
 
     <!-- build:css({.tmp}) ./style.css -->
     <link rel="stylesheet" href="styles/style.css">
     <!-- endbuild -->
 
+
+
     <!-- build:js({.tmp}) ./images/modernizr.js -->
     <script src="scripts/modernizr.js"></script>
     <!-- endbuild -->
-
 
     <!--[if lt IE 9]>
         <script src="scripts/html5shiv.js"></script>
@@ -43,7 +47,6 @@
             <![endif]-->
         <div class="top"></div>
 
-        <div id="content"> ssssssss </div>
         <nav class="gnb">
             <div class="container">
                 <div class="row">
@@ -386,20 +389,21 @@
                 </div>
                 <!-- /.blog-main -->
                 <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-                    <s_sidebar>
+                    <s_sidebar>                        
+
                         <!-- 기본 사이드바 -->
                         <s_sidebar_element>
                             <div class="Sidebar Category">
-                                <P class="sidebarTitle"><i class="icon-folder-open-alt"></i> CATEGORY</P>
+                                <P class="sidebarTitle">CATEGORY</P>
                                 <!-- 카테고리 모듈 -->
                                 [##_category_##]
                             </div>
                             <!--/.Category -->
                             <!-- 카테고리 펼쳐놓기 -->
                             <script type="text/javascript">
-                            try {
-                                expandTree();
-                            } catch (e) {}
+                                try {
+                                    expandTree();
+                                } catch (e) {}
                             </script>
                         </s_sidebar_element>
                         <s_sidebar_element>
@@ -435,16 +439,11 @@
                             <div class="Sidebar sidebar-nav">
                                 <!-- 관리자 모듈 -->
                                 <div id="adminMenu">
-                                    <ul>
-                                        <li class="tab_admin">
-                                            <a href="[##_owner_url_##]"><img src="./images/btn_admin.gif" alt="관리자" />
-                                            </a>
-                                        </li>
-                                        <li class="tab_write">
-                                            <a href="[##_owner_url_##]/entry/post"><img src="./images/btn_write.gif" alt="글쓰기" />
-                                            </a>
-                                        </li>
-                                    </ul>
+                                <a class="btn btn-default btn-sm" href="[##_owner_url_##]">
+                                <i class="fa fa-cog"></i> 관리자</a>
+
+                                <a class="btn btn-default btn-sm" href="[##_owner_url_##]/entry/post">
+                                <i class="fa fa-pencil"></i> 글쓰기</a>                                  
                                 </div>
                             </div>
                         </s_sidebar_element>
@@ -453,7 +452,7 @@
                                 <!-- 태그목록 모듈 -->
                                 <P class="sidebarTitle"><i class="icon-folder-open-alt"></i> TAG</P>
                                 <div id="tagbox">
-                                    <ul>
+                                    <ul class="list-unstyled">
                                         <s_random_tags>
                                             <li><a href="[##_tag_link_##]" class="[##_tag_class_##]"> [##_tag_name_##]</a>
                                             </li>
@@ -467,7 +466,7 @@
                                 <!-- 최근 포스트 모듈 -->
                                 <P class="sidebarTitle"><i class="icon-folder-open-alt"></i> 최근에 올라온 글</P>
                                 <div id="recentPost">
-                                    <ul>
+                                    <ul class="list-unstyled">
                                         <s_rctps_rep>
                                             <li>
                                                 <a href="[##_rctps_rep_link_##]"> [##_rctps_rep_title_##].</a>
@@ -483,7 +482,7 @@
                                 <!-- 최근 댓글 모듈 -->
                                 <P class="sidebarTitle"><i class="icon-folder-open-alt"></i> 최근에 달린 댓글</P>
                                 <div id="recentComment">
-                                    <ul id="recentComments">
+                                    <ul id="recentComments" class="list-unstyled">
                                         <s_rctrp_rep>
                                             <li>
                                                 <a href="[##_rctrp_rep_link_##]">[##_rctrp_rep_desc_##].</a>
@@ -502,7 +501,7 @@
                                 <!-- 최근 트랙백 모듈 -->
                                 <P class="sidebarTitle"><i class="icon-folder-open-alt"></i> 최근에 받은 트랙백</P>
                                 <div id="recentTrackback">
-                                    <ul>
+                                    <ul class="list-unstyled">
                                         <s_rcttb_rep>
                                             <li>
                                                 <a href="[##_rcttb_rep_link_##]">[##_rcttb_rep_desc_##].</a>
@@ -521,7 +520,7 @@
                                 <!-- 최근 보관함 모듈 -->
                                 <P class="sidebarTitle"><i class="icon-folder-open-alt"></i> 글 보관함</P>
                                 <div id="archive">
-                                    <ul>
+                                    <ul class="list-unstyled">
                                         <s_archive_rep>
                                             <li>
                                                 <a href="[##_archive_rep_link_##]">[##_archive_rep_date_##] </a>
@@ -546,7 +545,7 @@
                                 <!-- 링크 모듈 -->
                                 <P class="sidebarTitle"><i class="icon-folder-open-alt"></i> 링크</P>
                                 <div id="link">
-                                    <ul>
+                                    <ul class="list-unstyled">
                                         <s_link_rep>
                                             <li>
                                                 <a href="[##_link_url_##]" onclick="window.open(this.href); return false"> [##_link_site_##].</a>
@@ -560,7 +559,7 @@
                             <!-- 카운터 모듈 -->
                             <div id="Sidebar">
                                 <P class="sidebarTitle"><i class="icon-folder-open-alt"></i> 카운터</P>
-                                <ul>
+                                <ul class="list-unstyled">
                                     <li class="total">Total : [##_count_total_##] </li>
                                     <li class="today">Today : [##_count_today_##]</li>
                                     <li class="yesterday">Yesterday : [##_count_yesterday_##]</li>
@@ -584,11 +583,9 @@
                         </s_sidebar_element>
                         <s_sidebar_element>
                             <!-- RSS 링크 -->
-                            <div id="btnRSS">
-                                <center>
-                                    <a href="[##_rss_url_##]" onclick="window.open(this.href); return false">
-                                        <img src="./images/rss.gif" alt="rss" /> </a>
-                                </center>
+                            <div id="btnRSS">                                
+                                <a class="btn btn-danger" href="[##_rss_url_##]" onclick="window.open(this.href); return false">
+                                     <i class="fa fa-rss fa-lg"></i> RSS</a>                             
                             </div>
                         </s_sidebar_element>
                         <s_sidebar_element>
@@ -655,7 +652,7 @@
 
     <script>
     jQuery(function() {
-
+        /*Markdown인식을 위한 코드 (위에 marked.js가 로드되 있어야 함*/
         jQuery('markdown').each(function() {
             jQuery(this).replaceWith(marked(jQuery(this).html()));
         });
