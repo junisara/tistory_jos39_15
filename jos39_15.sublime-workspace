@@ -28,10 +28,10 @@
 	"buffers":
 	[
 		{
-			"file": "app/index.html",
+			"file": "app/scripts/style.js",
 			"settings":
 			{
-				"buffer_size": 35992,
+				"buffer_size": 438,
 				"line_ending": "Windows"
 			}
 		},
@@ -39,24 +39,25 @@
 			"file": "app/_less/layout.less",
 			"settings":
 			{
-				"buffer_size": 2148,
+				"buffer_size": 2436,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Gruntfile.js",
+			"file": "app/index.html",
 			"settings":
 			{
-				"buffer_size": 6558,
+				"buffer_size": 36332,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/_less/_less_source.less",
+			"contents": " <!-- CommonDown 인식 시작 -->\n\n    <script src=\"http://spec.commonmark.org/js/commonmark.js\"></script>\n    <script type=\"text/javascript\">\n        var reader = new commonmark.DocParser();\n        var writer = new commonmark.HtmlRenderer();\n          \n        jQuery( document ).ready(function() {    \n            jQuery(\"markdown\").each(function() {\n                jQuery(this).replaceWith(writer.render( reader.parse(  jQuery(this).html())));\n            });  \n        });\n    \n    </script>\n    <!-- CommonDown 인식 끝 -->",
 			"settings":
 			{
-				"buffer_size": 181,
-				"line_ending": "Unix"
+				"buffer_size": 519,
+				"line_ending": "Windows",
+				"name": "<!-- CommonDown 인식 시작 -->"
 			}
 		}
 	],
@@ -115,10 +116,14 @@
 	[
 		"/D/PROJECT/tistory_skin/jos39_15",
 		"/D/PROJECT/tistory_skin/jos39_15/app",
-		"/D/PROJECT/tistory_skin/jos39_15/app/_less"
+		"/D/PROJECT/tistory_skin/jos39_15/app/_less",
+		"/D/PROJECT/tistory_skin/jos39_15/app/scripts"
 	],
 	"file_history":
 	[
+		"/D/PROJECT/tistory_skin/jos39_15/Gruntfile.js",
+		"/D/PROJECT/tistory_skin/jos39_15/app/_less/layout.less",
+		"/D/PROJECT/tistory_skin/jos39_15/app/index.html",
 		"/D/PROJECT/tistory_skin/jos39_15/.tmp/concat/style.css",
 		"/D/PROJECT/handicraft/app/views/detail.html",
 		"/D/PROJECT/handicraft/app/index.html",
@@ -161,6 +166,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\"",
 			"cssmin",
 			"boot",
 			"cssmin",
@@ -179,6 +185,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"'",
 			"content"
 		],
 		"reverse": false,
@@ -195,50 +202,49 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/index.html",
+					"file": "app/scripts/style.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 35992,
+						"buffer_size": 438,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								824,
-								782
+								16,
+								16
 							]
 						],
 						"settings":
 						{
 							"BracketHighlighterBusy": false,
+							"auto_complete": false,
 							"bh_regions":
 							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
-								"bh_default_content"
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -253,15 +259,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2148,
+						"buffer_size": 2436,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								453,
-								453
+								400,
+								400
 							]
 						],
 						"settings":
@@ -269,85 +275,84 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
-								"bh_default_content"
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"syntax": "Packages/LESS/LESS.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 247.0,
+						"translation.y": 75.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "Gruntfile.js",
+					"file": "app/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6558,
+						"buffer_size": 36332,
 						"regions":
 						{
 						},
 						"selection":
 						[
-							[
-								6242,
-								6248
-							]
 						],
 						"settings":
 						{
 							"BracketHighlighterBusy": false,
+							"auto_complete": false,
 							"bh_regions":
 							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
-								"bh_default_content"
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4747.0,
+						"translation.y": 13561.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -355,54 +360,56 @@
 				},
 				{
 					"buffer": 3,
-					"file": "app/_less/_less_source.less",
-					"semi_transient": true,
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 181,
+						"buffer_size": 519,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								181,
-								181
+								99,
+								32
 							]
 						],
 						"settings":
 						{
 							"BracketHighlighterBusy": false,
+							"auto_name": "<!-- CommonDown 인식 시작 -->",
 							"bh_regions":
 							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
-								"bh_default_content"
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
-							"syntax": "Packages/LESS/LESS.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -450,7 +457,7 @@
 	"project": "jos39_15.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
