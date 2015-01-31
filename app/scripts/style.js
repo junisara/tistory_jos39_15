@@ -1,13 +1,60 @@
 'use strict';
 
+/***************************************/
+/**** 날자를 디자인 형태로 구분하기*****/
+/***************************************/
+	if(jQuery('.article_date').html()) {
+	var article_rep_date = jQuery('.article_date').html();						
+	var article_rep_date_S   = article_rep_date.split(' ');
+	var	article_rep_date_YMD = article_rep_date_S[0].split('/');			
+		jQuery('.article_rep_date .ym').html(article_rep_date_YMD[0] + '.' + article_rep_date_YMD[1]);
+		jQuery('.article_rep_date .d').html(article_rep_date_YMD[2]);			
+	}
+
+
+
+
+/*
+/* 매인 화면과 사이드화면의 높이를 동일하게 맞추기
+ */
+var contentsHeight = jQuery('#contents').height();
+var sideAreaHeight = jQuery('#sideArea').height();
+
+if( contentsHeight > sideAreaHeight) {
+	jQuery('#sideArea').height(contentsHeight);
+} else {
+	jQuery('#contents').height(sideAreaHeight+30);
+}
 
 
 
 
 
+/*
+/* 사이드바 마우스 온 시 투명도 없애기	
+ */
+jQuery( '#sideArea' ).mouseenter(function() {
+  jQuery( '.trans-dumy' ).animate({    
+    opacity: 0 
+  }, 200, function() {
+     jQuery('.trans-dumy').css('display', 'none');
+  } );
+})
+.mouseleave(function() {
+    jQuery( '.trans-dumy' ).animate({    
+      opacity: 1   
+  }, 200, function() {
+     jQuery('.trans-dumy').css('display', 'block');
+  } );
+  });
 
-var delay = 150,
-    setTimeoutConst;
+
+
+
+			
+/* GNB 마우스 업때 조루 방지 
+/*
+var delay = 150, setTimeoutConst;
 
 jQuery('.gnb .depth1').hover(function() {
 
@@ -22,3 +69,4 @@ jQuery('.gnb .depth1').hover(function() {
     }
 
 });
+*/
