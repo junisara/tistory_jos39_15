@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"wid",
+				"width"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"disp",
+				"display:none"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
 				"conca",
 				"concat"
 			],
@@ -27,39 +47,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "app/scripts/style.js",
-			"settings":
-			{
-				"buffer_size": 438,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/_less/layout.less",
-			"settings":
-			{
-				"buffer_size": 2436,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/index.html",
-			"settings":
-			{
-				"buffer_size": 36332,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": " <!-- CommonDown 인식 시작 -->\n\n    <script src=\"http://spec.commonmark.org/js/commonmark.js\"></script>\n    <script type=\"text/javascript\">\n        var reader = new commonmark.DocParser();\n        var writer = new commonmark.HtmlRenderer();\n          \n        jQuery( document ).ready(function() {    \n            jQuery(\"markdown\").each(function() {\n                jQuery(this).replaceWith(writer.render( reader.parse(  jQuery(this).html())));\n            });  \n        });\n    \n    </script>\n    <!-- CommonDown 인식 끝 -->",
-			"settings":
-			{
-				"buffer_size": 519,
-				"line_ending": "Windows",
-				"name": "<!-- CommonDown 인식 시작 -->"
-			}
-		}
 	],
 	"build_system": "Packages/User/grunt_build.sublime-build",
 	"command_palette":
@@ -121,9 +108,13 @@
 	],
 	"file_history":
 	[
-		"/D/PROJECT/tistory_skin/jos39_15/Gruntfile.js",
-		"/D/PROJECT/tistory_skin/jos39_15/app/_less/layout.less",
 		"/D/PROJECT/tistory_skin/jos39_15/app/index.html",
+		"/D/PROJECT/tistory_skin/jos39_15/app/_less/_variables.less",
+		"/D/PROJECT/tistory_skin/jos39_15/app/scripts/style.js",
+		"/D/PROJECT/tistory_skin/jos39_15/app/_less/layout.less",
+		"/D/PROJECT/tistory_skin/jos39_15/app/_less/tistory_basic.less",
+		"/D/PROJECT/tistory_skin/jos39_15/bower_components/font-awesome/css/font-awesome.css",
+		"/D/PROJECT/tistory_skin/jos39_15/Gruntfile.js",
 		"/D/PROJECT/tistory_skin/jos39_15/.tmp/concat/style.css",
 		"/D/PROJECT/handicraft/app/views/detail.html",
 		"/D/PROJECT/handicraft/app/index.html",
@@ -152,7 +143,7 @@
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -166,6 +157,22 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"treeComponent",
+			"#treeComponent",
+			"treeComponent",
+			"#treeComponent",
+			"commentWrite",
+			"<a",
+			"카테고리 다른 글 위치 변경",
+			"MissFlash_Div_Num\n",
+			"<script type=\"text/javascript\" language=\"javascript\">\nvar MissFlash_Div_Num = 1;\n</script>",
+			"imageblock",
+			"Nanum",
+			"\"",
+			"sidebarTitle",
+			"table",
+			"treeComponent",
+			"font",
 			"\"",
 			"cssmin",
 			"boot",
@@ -197,221 +204,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/scripts/style.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 438,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								16,
-								16
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_complete": false,
-							"bh_regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/_less/layout.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2436,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								400,
-								400
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 75.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 36332,
-						"regions":
-						{
-						},
-						"selection":
-						[
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_complete": false,
-							"bh_regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 13561.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 519,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								99,
-								32
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_name": "<!-- CommonDown 인식 시작 -->",
-							"bh_regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -492,7 +286,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 237.0,
+	"side_bar_width": 178.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

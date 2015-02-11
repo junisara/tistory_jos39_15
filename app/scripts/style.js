@@ -14,6 +14,24 @@
 
 
 
+
+
+/*
+/* 본문 이미지의 width가 본문을 넘어서면 width값 조절 
+ */
+
+
+var contentBodyWidth = jQuery('.content_body').width();
+
+jQuery('.content_body img').each(function() {
+	if(jQuery(this).width() > contentBodyWidth) {
+            jQuery(this).css('width', contentBodyWidth);
+            jQuery(this).parents('.imageblock').css('width', contentBodyWidth + 2);
+            }
+        });
+
+
+
 /*
 /* 매인 화면과 사이드화면의 높이를 동일하게 맞추기
  */

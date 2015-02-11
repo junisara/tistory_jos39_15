@@ -2,11 +2,6 @@
 @charset "utf-8";
 /* 본문 공통 */
 
-
-
-
-
-
 body {
     height: 100%;
     position: relative;
@@ -20,14 +15,13 @@ body {
         color: @link-hover
     }
     #contents {
-        overflow: hidden;       
-        background: #fff;       
-         padding: 0 30px;       
+        overflow: hidden;
+        background: #fff;
+        padding: 0 40px;
         .mainTitle {
-            margin-top: 30px;           
+            margin-top: 30px;
             padding-bottom: 20px;
             border-bottom: 1px @gray-lighter solid;
-
             .article_rep_date {
                 float: left;
                 width: 60px;
@@ -37,7 +31,7 @@ body {
                 border-radius: 50%;
                 background: @article_date_bg;
                 font-family: verdana, sans-serif;
-                .ym {                     
+                .ym {
                     font-size: .75em;
                     letter-spacing: -.08em;
                     text-align: center;
@@ -67,7 +61,8 @@ body {
         .content_body {
             margin-top: 20px;
             font-family: 'Nanum Myeongjo';
-            font-size: 16px;
+            font-size: 18px;
+            color: @gray;
             .google_top1 {
                 text-align: center;
                 margin-bottom: 20px;
@@ -76,17 +71,83 @@ body {
                 text-align: center;
                 margin-top: 20px;
             }
+        }
+        ol.comment > li {
+            color: @gray-darker;
+            border-bottom: 1px @gray-lighter solid;
+            small {
+                color: @gray-light;
+                a {
+                    color: @gray-light;
+                    margin-left:10px;
+                }
+                .date{
+                        font-family: verdana;
+                        font-size: 10px;
+                        color: #aaa;
+                    }
+            }
+        }
+        .panel-footer {
+            overflow: hidden;
+            .commentWrite {
+                .form-group {
+                    margin-right: 15px;
+                }
+            }
+            div {
+                margin: 3px 0
+            }
+            .checkbox input {
+                margin-top: 8px;
+            }
+        }
+    }
+    #guestbook {
+        .commentWrite {
+            margin-bottom: 5px;
+            .form-group {
+                margin-right: 15px;
+            }
+        }
+        .write {
+            overflow: hidden;
+            margin-top: 5px;
+        }
+        #guestList {
+            ol > li {
+                color: @gray-darker;
+                border-bottom: 1px @gray-lighter solid;
+                small {
+                    color: @gray-light;
+                    a {
+                        color: @gray-light;
+                         margin-left:10px;
+                    }
+                    .date{
+                        font-family: verdana;
+                        font-size: 10px;
+                        color: #aaa;
+                    }
+                }
+                ul {
+                    margin: 10px 0px;
+                    padding: 0px 10px;
+                    background: #f8f8f8;
+                    border-top: 1px #eee solid;
 
-
+                }
+            }
         }
     }
     #sideArea {
         overflow: hidden;
-        position: relative;;
+        position: relative;
+        padding-top: 30px;
         .trans-dumy {
             position: absolute;
             top: 0;
-            left:0;
+            left: 0;
             height: 100%;
             width: 100%;
             z-index: 10;
@@ -94,35 +155,38 @@ body {
             span {
                 left: 70px;
                 top: 200px;
-                color:#ddd;
+                color: #ddd;
             }
         }
-        padding-top: 30px;
-        // width: 300px;
-        // min-height: 500px;
-        // padding:10px;
-        a {color:@gray-light }        
-        .Sidebar {            
+        .breadcrumb {
+            font-family: @font_11;
+            font-size: 11px;
+            letter-spacing: -0.18em;
+        }
+        a {
+            color: @gray-light
+        }
+        .Sidebar {
             margin-top: 20px;
             .sidebarTitle {
                 color: @gray;
                 font-size: 16px;
                 border-bottom: 1px #ddd solid;
             }
-            ul{
+            ul {
                 padding-left: 16px;
                 font-size: 11px;
                 line-height: 1.5;
                 font-family: @font_11;
             }
         }
-        #blogImage img {width: 100%;}
-        #tagbox ul li{
+        #blogImage img {
+            width: 100%;
+        }
+        #tagbox ul li {
             display: inline-block;
             padding-right: 5px;
             padding-left: 5px;
         }
-
-
     }
 }
