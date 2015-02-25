@@ -17,7 +17,7 @@ body {
     #contents {
         overflow: hidden;
         background: #fff;
-        padding: 0 40px;
+        // padding: 0 40px;
         .mainTitle {
             margin-top: 30px;
             padding-bottom: 20px;
@@ -60,10 +60,11 @@ body {
         }
         .content_body {
             margin-top: 20px;
-            font-family: 'Nanum Myeongjo';
-            font-size: 18px;
+            font-family: 'Nanum Gothic';
+            font-size: 1em;
             color: @gray;
             .google_top1 {
+                display: none;
                 text-align: center;
                 margin-bottom: 20px;
             }
@@ -71,6 +72,7 @@ body {
                 text-align: center;
                 margin-top: 20px;
             }
+
         }
         ol.comment > li {
             color: @gray-darker;
@@ -79,13 +81,13 @@ body {
                 color: @gray-light;
                 a {
                     color: @gray-light;
-                    margin-left:10px;
+                    margin-left: 10px;
                 }
-                .date{
-                        font-family: verdana;
-                        font-size: 10px;
-                        color: #aaa;
-                    }
+                .date {
+                    font-family: verdana;
+                    font-size: 10px;
+                    color: #aaa;
+                }
             }
         }
         .panel-footer {
@@ -122,9 +124,9 @@ body {
                     color: @gray-light;
                     a {
                         color: @gray-light;
-                         margin-left:10px;
+                        margin-left: 10px;
                     }
-                    .date{
+                    .date {
                         font-family: verdana;
                         font-size: 10px;
                         color: #aaa;
@@ -135,7 +137,6 @@ body {
                     padding: 0px 10px;
                     background: #f8f8f8;
                     border-top: 1px #eee solid;
-
                 }
             }
         }
@@ -152,6 +153,7 @@ body {
             width: 100%;
             z-index: 10;
             background-color: rgba( 245, 245, 245, 1);
+            display: none;
             span {
                 left: 70px;
                 top: 200px;
@@ -187,6 +189,32 @@ body {
             display: inline-block;
             padding-right: 5px;
             padding-left: 5px;
+        }
+    }
+}
+/* Medium devices (desktops, 992px and up) */
+
+@media screen and (min-width: 992px) {
+    body {       
+        #contents {
+            padding: 0 40px;
+            .content_body {
+                font-family: 'Nanum Myeongjo';
+                font-size: 1.25em;
+                .google_top1 {
+                    display: block;
+                }
+                .google_ad2 {
+                    display: none;
+                }
+            }
+        }
+        
+        #sideArea {       
+            .trans-dumy {
+                display: block;
+                
+            }
         }
     }
 }
