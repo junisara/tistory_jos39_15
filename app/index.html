@@ -265,7 +265,7 @@
                             <h2 class="articleTitle"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h2>
                             <s_ad_div>
                                 <div class="admin">
-                                    <small> 
+                                    <small>
                                 <a href="[##_s_ad_m_link_##]">수정</a> :
                                 <a href="#" onclick="[##_s_ad_m_onclick_##]">수정(창으로)</a> | ([##_s_ad_s1_label_##])→
                                 <a href="#" onclick="[##_s_ad_s2_onclick_##]">[##_s_ad_s2_label_##]</a> |
@@ -727,22 +727,13 @@
     <!-- build:js({bower_components,app}) ./images/vendor.min.js -->
     <script src="jquery/dist/jquery.js"></script>
     <script src="_lib/bootstrap_custom/js/bootstrap.js"></script>
-    <script src="marked/lib/marked.js"></script>
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app}) ./images/style.js -->
     <script src="scripts/style.js"></script>
     <!-- endbuild -->
 
-    <script>
-    jQuery(function() {
-        /*Markdown인식을 위한 코드 (위에 marked.js가 로드되 있어야 함*/
-        jQuery('markdown').each(function() {
-            jQuery(this).replaceWith(marked(jQuery(this).html()));
-        });
 
-    });
-    </script>
 
 
 
