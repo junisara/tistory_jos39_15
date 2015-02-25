@@ -2,6 +2,51 @@
 @charset "utf-8";
 /* 반드시 들어가야 하는 스타일 시작 */
 /* Reset the container */
+/* 기본설정 */
+
+h1 {
+    font-family: @font;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #ddd;
+}
+h2 {
+    font-family: @font;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #eee;
+}
+h3 {
+    font-family: @font;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #eee;
+}
+h4 {
+    font-family: @font;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #eee;
+}
+h5 {
+    font-family: @font;
+    color: #777;
+    padding-bottom: 0.5em;
+}
+h6 {
+    font-family: @font;
+    color: #777;
+   padding-bottom: 0.5em;
+}
+
+blockquote, q {
+    margin: 1.2em 0;
+    border-left: 4px solid #DDD;
+    padding: 0.5em 1em;
+    font-size: 0.85em;
+    color: #777;
+    quotes: none;
+    background: #f7f7f7;
+}
+blockquote::before, blockquote::after, q::before, q::after {
+    content: none;
+}
 
 /* 페이징 - 현재 페이지 */
 
@@ -17,11 +62,6 @@
     padding-right: 6px;
     color: #999;
 }
-
-
-
-
-
 /* Main 화면  설정 */
 
 div#ttCanvas .tt-span-12 {
@@ -30,35 +70,28 @@ div#ttCanvas .tt-span-12 {
 tt-itemgroup-decorator {
     width: 840px;
 }
-
-
-
-
 /* 사이드바 설정 */
 
-   #treeComponent {
-        font-size: 12px;
-        line-height: 1.5;        
-        /* 카테고리 - 이미지 버튼 */
-        
-        .ib {
-            cursor: pointer;
-        }
-        /* 카테고리 - 트리 셀 */
-        
-        .branch3 {
-            cursor: pointer;
-        }
-        /* 카테고리 - 카테고리 옆 개수 스타일 */
-        
-        .c_cnt {
-            font: 0.75em Tahoma, Helvetica, Arial, Gulim, sans-serif;
-            color: #f30;
-        }
+#treeComponent {
+    font-size: 12px;
+    line-height: 1.5;
+    /* 카테고리 - 이미지 버튼 */
+    
+    .ib {
+        cursor: pointer;
     }
-
-
-
+    /* 카테고리 - 트리 셀 */
+    
+    .branch3 {
+        cursor: pointer;
+    }
+    /* 카테고리 - 카테고리 옆 개수 스타일 */
+    
+    .c_cnt {
+        font: 0.75em Tahoma, Helvetica, Arial, Gulim, sans-serif;
+        color: #f30;
+    }
+}
 /* 달력 월 표시 */
 
 .cal_month {
@@ -163,7 +196,7 @@ a.cal_click:hover {
     border: 1px #ccc solid;
     padding: 0px;
     margin: 5px 0;
-    width:auto !important;
+    width: auto !important;
 }
 /* 왼쪽 */
 
