@@ -32,9 +32,8 @@ h5 {
 h6 {
     font-family: @font;
     color: #777;
-   padding-bottom: 0.5em;
+    padding-bottom: 0.5em;
 }
-
 blockquote, q {
     margin: 1.2em 0;
     border-left: 4px solid #DDD;
@@ -47,7 +46,6 @@ blockquote, q {
 blockquote::before, blockquote::after, q::before, q::after {
     content: none;
 }
-
 /* 페이징 - 현재 페이지 */
 
 .selected {
@@ -76,17 +74,17 @@ tt-itemgroup-decorator {
     font-size: 12px;
     line-height: 1.5;
     /* 카테고리 - 이미지 버튼 */
-
+    
     .ib {
         cursor: pointer;
     }
     /* 카테고리 - 트리 셀 */
-
+    
     .branch3 {
         cursor: pointer;
     }
     /* 카테고리 - 카테고리 옆 개수 스타일 */
-
+    
     .c_cnt {
         font: 0.75em Tahoma, Helvetica, Arial, Gulim, sans-serif;
         color: #f30;
@@ -161,13 +159,47 @@ a.cal_click:hover {
 }
 /* 종류별 코멘트 [##_rp_rep_class_##] */
 
-.rp_general {} .rp_admin span.name {
-    background: url(images/iconAdmin.gif) no-repeat;
-    padding-left: 20px;
-    height: 22px;
-}
-.rp_secret {
-    color: #f30;
+.comment {
+    p {
+        margin-bottom: 4px;
+    }
+    > li {
+        border-top: 1px @gray-lighter solid;
+        padding: 10px 0;
+        color: @gray-darker;
+        small {
+            color: #ddd;
+            a {
+                color: #bbb;
+            }
+        }
+        ul {
+            padding: 5px;
+            padding-left: 2em;
+            background: #f7f7f7;
+            font-size: 0.85em;
+            .small {
+                font-size: 0.9em;
+                color: #ddd;
+                > span {
+                    margin-right: 1em;
+                }
+                a {
+                    color: #bbb;
+                }
+            }
+            > li {
+                border-top: 1px @gray-lighter solid;
+                padding: 10px 0;
+            }
+        }
+        .rp_admin {} .rp_secret {
+            color: @link-base;
+        }
+    }
+    li:first-child {
+        border-top: 0;
+    }
 }
 /* 종류별 방명록 글 [##_guest_rep_class_##] */
 
@@ -187,8 +219,9 @@ a.cal_click:hover {
 .cap1 {
     color: #999;
     text-align: center;
-    padding: 4px 0;
+    padding: 2px 0;
     margin: 0;
+    font: normal 11px @font_11;
 }
 /* 그림 */
 
