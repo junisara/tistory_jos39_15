@@ -18,10 +18,10 @@ body {
         overflow: hidden;
         background: #fff;
         // padding: 0 40px;
-        .mainTitle {
+         .mainTitle {
             margin-top: 30px;
             padding-bottom: 20px;
-            border-bottom: 1px @gray-lighter solid;
+            // border-bottom: 1px @gray-lighter solid;
             .article_rep_date {
                 float: left;
                 width: 60px;
@@ -74,9 +74,20 @@ body {
                 margin-bottom: 20px;
             }
             .google_ad2 {
+                display: block;
                 text-align: center;
                 margin-top: 20px;
             }
+             .gAd {
+                    text-align: center;
+                    .google_ad3{
+                        display: block;
+                    }
+                    .google_ad4{
+                        display: none;
+                    }
+                }
+
             table {
                 padding: 0;
                 border-collapse: collapse;
@@ -258,6 +269,9 @@ body {
                 .gAd {
                     text-align: center;
                     .google_ad3{
+                        display: inline;
+                    }
+                    .google_ad4{
                         display: inline;
                     }
                 }
