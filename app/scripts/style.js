@@ -59,11 +59,17 @@ function sidebarDumy() {
 /*
 /* 사이드바 아이콘의 세로 중앙정렬
  */
-function icon_mouseOnMiddle(height) {
-    var icon_mouseOnTop = height / 2 - 60;
-    jQuery('.icon_mouseOn').css('top', icon_mouseOnTop);
-}
+function icon_mouseOnMiddle() {
 
+    var obj         = jQuery('#blogImage').offset();
+    var objHeight   = jQuery('#blogImage').height();
+    var objWidth    = jQuery('#blogImage').width();
+
+    // .icon_mouseOn의 현재 위치에서 특정치(50px)만큼 이동
+    jQuery('.icon_mouseOn').css('top', obj.top + objHeight + 40);
+    jQuery('.icon_mouseOn').css('left', objWidth/2 - 30);
+}
+ 
 /* GNB 마우스 업때 조루 방지
 /*
 var delay = 150, setTimeoutConst;
