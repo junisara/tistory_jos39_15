@@ -6,31 +6,42 @@
 
 h1 {
     font-family: @font;
+    font-weight: bold;
     padding-bottom: 0.5em;
     border-bottom: 3px solid @gray-lighter;
 }
 h2 {
     font-family: @font;
-    padding-bottom: 0.5em;
-    border-bottom: 3px solid @gray-lighter;
-}
-h3 {
-    font-family: @font;
-    padding-bottom: 0.5em;
-    border-bottom: 2px solid @gray-lighter;
-}
-h4 {
-    font-family: @font;
+    font-weight: bold;
+    margin-top: 1.5em;
     padding-bottom: 0.5em;
     border-bottom: 1px solid @gray-lighter;
 }
+h3 {
+    font-family: @font;
+    font-weight: bold;
+    margin-top: 1.5em;
+    padding-bottom: 0.2em;
+    border-bottom: 0px solid @gray-lighter;
+}
+h4 {
+    font-family: @font;
+    font-weight: bold;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    padding-bottom: 0;
+    border-bottom: 0px solid @gray-lighter;
+}
 h5 {
     font-family: @font;
+    font-weight: bold;
     color: #777;
-    padding-bottom: 0.5em;
+    margin-top: 1.5em;
+    padding-bottom: 0.3em;
 }
 h6 {
     font-family: @font;
+    font-weight: bold;
     color: #777;
     padding-bottom: 0.5em;
 }
@@ -74,17 +85,17 @@ tt-itemgroup-decorator {
     font-size: 12px;
     line-height: 1.5;
     /* 카테고리 - 이미지 버튼 */
-    
+
     .ib {
         cursor: pointer;
     }
     /* 카테고리 - 트리 셀 */
-    
+
     .branch3 {
         cursor: pointer;
     }
     /* 카테고리 - 카테고리 옆 개수 스타일 */
-    
+
     .c_cnt {
         font: 0.75em Tahoma, Helvetica, Arial, Gulim, sans-serif;
         color: #f30;
@@ -277,3 +288,7 @@ a.cal_click:hover {
     border-bottom: 1px dotted #ccc;
 }
 /* 반드시 들어가야하는 스타일 끝 - 이 아래는 자유롭게 추가, 삭제 가능 */
+
+code, kbd, pre, samp {
+  font-family: @font;
+}
