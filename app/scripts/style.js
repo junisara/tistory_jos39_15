@@ -69,7 +69,7 @@ function icon_mouseOnMiddle() {
     jQuery('.icon_mouseOn').css('top', obj.top + objHeight + 40);
     jQuery('.icon_mouseOn').css('left', objWidth/2 - 30);
 }
- 
+
 /* GNB 마우스 업때 조루 방지
 /*
 var delay = 150, setTimeoutConst;
@@ -98,8 +98,13 @@ jQuery(document).ready(function() {
     var contentsHeight = jQuery('#contents').height();
     var sideAreaHeight = jQuery('#sideArea').height();
     var winHeight = jQuery(window).height();
-    sameHeight(contentsHeight, sideAreaHeight);
-    icon_mouseOnMiddle(winHeight);
+
+    sameHeight(contentsHeight, sideAreaHeight); // 매인 화면과 사이드화면의 높이를 동일하게 맞추기
+    icon_mouseOnMiddle(winHeight); //사이드바 아이콘의 세로 중앙정렬
+
+   // 티스토리에서 이미지 바로 아래 있는 글(p태그) 의 아래 여백을 넣기
+    jQuery('.imageblock').parent('p').attr('style', 'margin-bottom : 2em !important');
+
 });
 
 jQuery(window).resize(function() {
