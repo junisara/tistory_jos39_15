@@ -1,8 +1,5 @@
 'use strict';
 
-
-
-
 /***************************************/
 /**** 날자를 디자인 형태로 구분하기*****/
 /***************************************/
@@ -105,6 +102,8 @@ jQuery(document).ready(function() {
    // 티스토리에서 이미지 바로 아래 있는 글(p태그) 의 아래 여백을 넣기
     jQuery('.imageblock').parent('p').attr('style', 'margin-bottom : 2em !important');
 
+    // 링크가 걸려있는 경우 무조건 새창으로 띄우기
+    jQuery('.markdown-here-wrapper a').attr('target','_blank');
 });
 
 jQuery(window).resize(function() {
